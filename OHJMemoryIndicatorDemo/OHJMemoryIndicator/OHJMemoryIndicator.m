@@ -62,8 +62,9 @@ static NSTimeInterval oUpdateInterval = 1.0;
     if (!self.indicating) {
         [self.timerUpdate invalidate];
         self.timerUpdate = nil;
-        [self.view removeFromSuperview];
+        [self.labelBase removeFromSuperview];
         self.labelBase = nil;
+        [self.view removeFromSuperview];
     }
     else {
         UIWindow *window = [UIApplication sharedApplication].keyWindow;
