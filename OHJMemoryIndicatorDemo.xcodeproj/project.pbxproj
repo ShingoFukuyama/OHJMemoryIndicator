@@ -10,10 +10,10 @@
 		5E142D0A1B51D20700954B41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E142D091B51D20700954B41 /* main.m */; };
 		5E142D0D1B51D20700954B41 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E142D0C1B51D20700954B41 /* AppDelegate.m */; };
 		5E142D101B51D20700954B41 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E142D0F1B51D20700954B41 /* ViewController.m */; };
-		5E142D131B51D20700954B41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E142D111B51D20700954B41 /* Main.storyboard */; };
 		5E142D151B51D20700954B41 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E142D141B51D20700954B41 /* Images.xcassets */; };
 		5E142D181B51D20700954B41 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5E142D161B51D20700954B41 /* LaunchScreen.xib */; };
 		5E142D241B51D20700954B41 /* OHJMemoryIndicatorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E142D231B51D20700954B41 /* OHJMemoryIndicatorDemoTests.m */; };
+		5E142D311B51D30100954B41 /* OHJMemoryIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E142D301B51D30100954B41 /* OHJMemoryIndicator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +34,13 @@
 		5E142D0C1B51D20700954B41 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5E142D0E1B51D20700954B41 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5E142D0F1B51D20700954B41 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		5E142D121B51D20700954B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E142D141B51D20700954B41 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5E142D171B51D20700954B41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		5E142D1D1B51D20700954B41 /* OHJMemoryIndicatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OHJMemoryIndicatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E142D221B51D20700954B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E142D231B51D20700954B41 /* OHJMemoryIndicatorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OHJMemoryIndicatorDemoTests.m; sourceTree = "<group>"; };
+		5E142D2F1B51D30100954B41 /* OHJMemoryIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHJMemoryIndicator.h; sourceTree = "<group>"; };
+		5E142D301B51D30100954B41 /* OHJMemoryIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OHJMemoryIndicator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +86,7 @@
 				5E142D0C1B51D20700954B41 /* AppDelegate.m */,
 				5E142D0E1B51D20700954B41 /* ViewController.h */,
 				5E142D0F1B51D20700954B41 /* ViewController.m */,
-				5E142D111B51D20700954B41 /* Main.storyboard */,
+				5E142D2E1B51D2C200954B41 /* OHJMemoryIndicator */,
 				5E142D141B51D20700954B41 /* Images.xcassets */,
 				5E142D161B51D20700954B41 /* LaunchScreen.xib */,
 				5E142D071B51D20700954B41 /* Supporting Files */,
@@ -117,6 +118,15 @@
 				5E142D221B51D20700954B41 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E142D2E1B51D2C200954B41 /* OHJMemoryIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				5E142D2F1B51D30100954B41 /* OHJMemoryIndicator.h */,
+				5E142D301B51D30100954B41 /* OHJMemoryIndicator.m */,
+			);
+			path = OHJMemoryIndicator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +209,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E142D131B51D20700954B41 /* Main.storyboard in Resources */,
 				5E142D181B51D20700954B41 /* LaunchScreen.xib in Resources */,
 				5E142D151B51D20700954B41 /* Images.xcassets in Resources */,
 			);
@@ -221,6 +230,7 @@
 			files = (
 				5E142D101B51D20700954B41 /* ViewController.m in Sources */,
 				5E142D0D1B51D20700954B41 /* AppDelegate.m in Sources */,
+				5E142D311B51D30100954B41 /* OHJMemoryIndicator.m in Sources */,
 				5E142D0A1B51D20700954B41 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +254,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5E142D111B51D20700954B41 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5E142D121B51D20700954B41 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5E142D161B51D20700954B41 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
